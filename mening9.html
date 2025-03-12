@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anne</title>
+    <style>
+        body {
+            background-color: lightblue;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        
+        .banner {
+            background-color: #87CEEB; /* Slightly darker blue */
+            width: 100%;
+            padding: 20px 0;
+            position: absolute;
+            top: 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .title {
+            font-size: 36px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            color: rgb(255, 255, 255);
+        }
+
+        .content {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: space-between; /* Distribute space between text and image */
+            width: 100%;
+            height: 100%;
+            padding-top: 100px; /* Increase padding to move content down */
+            box-sizing: border-box;
+        }
+
+        .text, .text2 {
+            color: white;
+            background-color: rgba(0, 15, 145, 0.5); /* Slightly light blue background */
+            padding: 20px;
+            margin-left: 180px; /* Ensure the text box stays on the left side with equal spacing */
+            border-radius: 8px;
+            max-width: 40%;
+            text-align: justify;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added shadow */
+            margin-bottom: 20px; /* Add margin to separate the text boxes */
+        }
+
+        .image {
+            margin-right: 100px; /* Ensure the image stays on the right side */
+            margin-top: 100px;
+            flex: 0 0 400px; /* Increase the predefined width for the image */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        .image img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .back-button {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            padding: 10px 20px;
+            background-color: #0056b3;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding-top: 100px; /* Adjust padding for mobile */
+            }
+
+            .text, .text2 {
+                margin: 20px auto; /* Center the text box */
+                max-width: 90%;
+            }
+
+            .image {
+                margin: 20px auto; /* Center the image */
+                width: 80%; /* Adjust width for mobile */
+                height: auto; /* Maintain aspect ratio */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <div class="title">
+            Anne
+        </div>
+    </div>
+    <button class="back-button" onclick="window.location.href='index.html'">Terug naar menu</button>
+    <div class="content">
+        <div>
+            <div class="text">
+                Anne kijkt naar migratie vanuit een hele andere invalshoek. Ze strijdt voor de rechten van vrouwen en ze  maakt zich zorgen over de invloed van migranten uit landen waar vrouwen nog steeds als minderwaardige burgers worden behandeld. “In Nederland hebben we hard gestreden voor gelijke rechten,” zegt ze. “Vrouwen mogen studeren, werken, hun eigen keuzes maken. Maar relatief veel migranten hebben bepaalde religieuze en culturele opvattingen die daar niet bepaald mee op één lijn staan.”
+                Ze ziet steeds vaker verhalen in het nieuws over minderjarige meisjes die worden uitgehuwelijkt, vrouwen die onder druk worden gezet om een hoofddoek te dragen of zelfs onder druk worden gezet om sexuele handelingen te verrichten die ze eigenlijk niet willen. “Dat gebeurt hier, in Nederland,” zegt ze fel. “Er zijn vrouwen die niet naar buiten mogen zonder een man erbij, vrouwen die thuis mishandeld worden totdat ze precies doen wat hun man hun opdraagt. En we doen alsof dat er gewoon bij hoort, omdat we zo bang zijn om iemand te beledigen.”
+                            </div>
+            <div class="text2">
+                Anne, en veel andere mensen, zijn bang dat door grote stroming van migranten, de mishandeling van vrouwen en de normalisering hiervan zal toenemen.
+                Ze zijn bang dat hoe meer mensen er komen met zulke denkbeelden, hoe moeilijker het wordt om die gelijke rechten te behouden. “Als je een grote groep hebt die vasthoudt aan valse ideeën, is het moeilijker om de goede ideeën vast te houden. Kijk naar sommige wijken in Frankrijk of Zweden, waar vrouwen niet meer zonder hoofddoek de straat op durven. Willen we dat hier ook?” vraagt ze zich af.
+                Voor Anne en nog vele anderen is het duidelijk: Nederland moet strenger zijn in wie hier mag blijven. “Vluchtelingen moeten we helpen, maar niet ten koste van de rechten waar we zo hard voor gevochten hebben.”
+                                            </div>
+        </div>
+        <div class="image">
+            <img src="man.webp" alt="man">
+        </div>
+    </div>
+</body>
+</html>
