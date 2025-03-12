@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Placeholder</title>
+    <title>Mening 1</title>
     <style>
         body {
             background-color: lightblue;
@@ -30,12 +30,51 @@
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
             color: rgb(255, 255, 255);
         }
+
+        .content {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            padding-top: 80px; /* To account for the banner height */
+        }
+
+        .text {
+            color: white;
+            background-color: rgba(135, 206, 235, 0.5); /* Slightly light blue background */
+            padding: 20px;
+            margin-right: 20px;
+            border-radius: 8px;
+            max-width: 40%;
+            text-align: justify;
+        }
+
+        .image {
+            max-width: 40%;
+        }
+
+        .image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
     </style>
 </head>
 <body>
     <div class="banner">
         <div class="title">
             Placeholder
+        </div>
+    </div>
+    <div class="content">
+        <div class="text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras non lacus ac libero ultricies tincidunt. Duis sollicitudin, urna et commodo aliquam, lectus nisl posuere neque, nec sagittis magna velit id nisi. Integer sit amet turpis nunc. Sed vel nulla vel mauris accumsan aliquet. Duis bibendum lectus nec dolor consequat, in tincidunt risus luctus.
+        </div>
+        <div class="image">
+            <img src="path/to/your/image.jpg" alt="Placeholder Image">
         </div>
     </div>
 </body>
