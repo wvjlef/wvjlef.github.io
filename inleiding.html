@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welkom op onze website!</title>
+    <title>Inleiding</title>
     <style>
         body {
             background-color: lightblue;
@@ -36,7 +36,9 @@
             flex-direction: column;
             align-items: center;
             width: 80%;
-            margin-top: 100px;
+            margin-top: 120px;
+            padding: 0 20px; /* Add padding for mobile */
+            box-sizing: border-box;
         }
 
         .text {
@@ -45,33 +47,53 @@
             padding: 20px;
             margin: 20px 0;
             border-radius: 8px;
-            max-width: 80%;
+            width: 100%;
             text-align: justify;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added shadow */
         }
 
         .sub-title {
             font-size: 24px;
-            color: #000;
+            color: #ffffff;
             margin: 20px 0;
+            text-align: center; /* Center subtitle */
+        }
+
+        @media (max-width: 768px) {
+            .title {
+                font-size: 28px; /* Adjust title font size for mobile */
+            }
+
+            .content {
+                margin-top: 160px; /* Adjust margin to ensure content is below banner */
+            }
+            
+            .text {
+                font-size: 16px; /* Adjust text font size for mobile */
+            }
+
+            .sub-title {
+                font-size: 20px; /* Adjust subtitle font size for mobile */
+            }
         }
     </style>
 </head>
 <body>
     <div class="banner">
         <div class="title">
-            Welkom op de website die onze poster toelicht!
+            Inleiding
         </div>
     </div>
     <div class="content">
         <div class="text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras non lacus ac libero ultricies tincidunt. Duis sollicitudin, urna et commodo aliquam, lectus nisl posuere neque, nec sagittis magna velit id nisi. Integer sit amet turpis nunc. Sed vel nulla vel mauris accumsan aliquet. Duis bibendum lectus nec dolor consequat, in tincidunt risus luctus.
+            Migratie is een onderwerp waar iedereen wel iets over te zeggen heeft. Sommige mensen zien het als iets positiefs, terwijl anderen zich er juist heel veel zorgen over maken. In Nederland hebben we te maken met veel verschillende groepen migranten: vluchtelingen die vluchten voor oorlog en geweld, arbeidsmigranten die hier komen werken, en mensen die om andere redenen verhuizen, zoals familiehereniging. Toch hebben ze allemaal iets gemeen: Ze willen in Nederland komen wonen, maar of ze warmhartig verwelkomd worden is nog maar de vraag…
         </div>
         <div class="sub-title">
-            Tussenkopje
+            Verschillende perspectieven op migratie
         </div>
         <div class="text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras non lacus ac libero ultricies tincidunt. Duis sollicitudin, urna et commodo aliquam, lectus nisl posuere neque, nec sagittis magna velit id nisi. Integer sit amet turpis nunc. Sed vel nulla vel mauris accumsan aliquet. Duis bibendum lectus nec dolor consequat, in tincidunt risus luctus.
+            We kijken allemaal op een verschillende manier naar migratie, het is belangrijk om te beseffen dat dat zo is. Als we naar migratie kijken, is het belangrijk dat je je ook probeert in te leven in anderen. Wanneer dit niet gebeurt, krijg je een enorme kloof tussen voor- en tegenstanders van migratie. Iedereen kijkt er op zijn eigen manier naar, afhankelijk van zijn of haar achtergrond en zijn of haar ervaringen. Dit is iets wat niet gaat veranderen. Wat we wel kunnen veranderen, is hoe we ermee omgaan.
+            Op de poster hebben we een beeld gegeven van wat die verschillende opinie dan zouden kunnen zijn. We zullen op deze website ook nog even die punten toelichten en laten zien wat ze eigenlijk representeren.
         </div>
     </div>
 </body>
