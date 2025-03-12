@@ -35,7 +35,7 @@
             display: flex;
             flex-direction: row;
             align-items: center;
-            justify-content: center;
+            justify-content: space-between; /* Distribute space between text and image */
             width: 100%;
             height: 100%;
             padding-top: 80px; /* To account for the banner height */
@@ -45,15 +45,15 @@
             color: white;
             background-color: rgba(0, 15, 145, 0.5); /* Slightly light blue background */
             padding: 20px;
-            margin-right: 20px;
+            margin-left: 20px; /* Ensure the text box stays on the left side */
             border-radius: 8px;
             max-width: 40%;
             text-align: justify;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added shadow */
-            align-self: flex-start; /* Align text box to the top */
         }
 
         .image {
+            margin-right: 20px; /* Ensure the image stays on the right side */
             max-width: 40%;
         }
 
