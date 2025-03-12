@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Henk</title>
+    <style>
+        body {
+            background-color: lightblue;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        
+        .banner {
+            background-color: #87CEEB; /* Slightly darker blue */
+            width: 100%;
+            padding: 20px 0;
+            position: absolute;
+            top: 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .title {
+            font-size: 36px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            color: rgb(255, 255, 255);
+        }
+
+        .content {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: space-between; /* Distribute space between text and image */
+            width: 100%;
+            height: 100%;
+            padding-top: 100px; /* Increase padding to move content down */
+            box-sizing: border-box;
+        }
+
+        .text, .text2 {
+            color: white;
+            background-color: rgba(0, 15, 145, 0.5); /* Slightly light blue background */
+            padding: 20px;
+            margin-left: 180px; /* Ensure the text box stays on the left side with equal spacing */
+            border-radius: 8px;
+            max-width: 40%;
+            text-align: justify;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added shadow */
+            margin-bottom: 20px; /* Add margin to separate the text boxes */
+        }
+
+        .image {
+            margin-right: 100px; /* Ensure the image stays on the right side */
+            margin-top: 100px;
+            flex: 0 0 400px; /* Increase the predefined width for the image */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        .image img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .back-button {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            padding: 10px 20px;
+            background-color: #0056b3;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding-top: 100px; /* Adjust padding for mobile */
+            }
+
+            .text, .text2 {
+                margin: 20px auto; /* Center the text box */
+                max-width: 90%;
+            }
+
+            .image {
+                margin: 20px auto; /* Center the image */
+                width: 80%; /* Adjust width for mobile */
+                height: auto; /* Maintain aspect ratio */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <div class="title">
+            Henk
+        </div>
+    </div>
+    <button class="back-button" onclick="window.location.href='index.html'">Terug naar menu</button>
+    <div class="content">
+        <div>
+            <div class="text">
+                Henk is boos. Maar onder die boosheid schuilt iets veel puurders: frustratie, verdriet en een gevoel van machteloosheid. Hij voelt zich in de steek gelaten door de mensen die hem zouden moeten helpen. Vijf jaar staat hij nu al op de wachtlijst voor een sociale huurwoning. Vijf jaar waarin hij telkens weer te horen krijgt dat hij geduld moet hebben, dat er nu eenmaal sprake is van een tekort. Maar ondertussen ziet hij hoe anderen, nieuwkomers, wél een huis krijgen. En dat raakt hem. “Mijn hele leven heb ik hard gewerkt, altijd netjes belasting betaald, altijd mijn best gedaan om een goede burger te zijn,” zegt hij. “En toch lijkt het alsof ik er totaal  niet meer toe doe voor de mensen die dit land besturen.” Henk slaapt nu noodgedwongen bij zijn zus op de bank. Zijn eigen plek heeft hij al lang geleden moeten opgeven omdat hij de huur niet meer kon betalen na een paar tegenslagen met zijn eigen bedrijf. Eerst verloor hij zijn baan, daarna kwam de scheiding. Alles ging bergafwaarts, en voor hij het wist, stond hij met zijn koffers op straat.
+            </div>
+            <div class="text2">
+                Hij heeft gesolliciteerd op alles wat los en vast zit, maar met zijn leeftijd en zonder recente werkervaring wil niemand hem meer. “Ik wil gewoon weer normaal leven,” zegt hij. “Een klein huisje, een beetje rust, een plek die van mij is.” Maar elke keer als hij weer een afwijzing krijgt en ziet hoe anderen wél een woning toegewezen krijgen, groeit de bitterheid. “Ik gun die mensen ook een thuis,” mompelt hij. “Echt waar. Maar waarom moet ik dan zo lang wachten? Waarom voelt het alsof ik niet meer meetel?”
+                Henk is één van de mensen die slachtoffer zijn geworden van het woningtekort en de huizenprijzen. Hij, en vele anderen voelen zich benadeeld omdat ze vaak zien dat nieuwkomers, oftewel migranten, wel direct een woning aangereikt krijgen. 
+                            </div>
+        </div>
+        <div class="image">
+            <img src="man.webp" alt="man">
+        </div>
+    </div>
+</body>
+</html>
